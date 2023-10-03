@@ -12,7 +12,7 @@ app.use(cors());
 //   res.status(200).json({ success: true, data: "Welcome to express server" });
 // });
 mongoose
-  .connect("mongodb://localhost:27017/RTOExamDB")
+  .connect("mongodb://0.0.0.0:27017/RTOExamDB")
   .then((result) => {
     //true
     console.log("Database Connected");
